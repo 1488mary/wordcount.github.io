@@ -1,0 +1,11 @@
+<a href="{%url'home'%}">home으로 돌아가기</a>
+<h1>내가 입력한 단어 수는 {{total}}입니다.</h1>
+<br><br>
+<h1>내가 입력한 텍스트</h1>
+{{full}}
+<br><br>
+<h1>단어 개수</h1>
+{%for word, howmany in count %}
+{{word}} : {{howmany}}
+<br>
+{%endfor%}
