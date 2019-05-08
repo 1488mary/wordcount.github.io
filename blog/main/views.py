@@ -7,6 +7,7 @@ def index(request):
     post = Post.objects.all()
 
     return render(request,'index.html',{'post':Post})
+    
 
 
 def upload(request):
